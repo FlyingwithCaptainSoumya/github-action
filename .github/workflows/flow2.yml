@@ -6,5 +6,9 @@ jobs:
         steps: 
           - name: Github Issues Output
             run: echo "******* Opened ISSUE *******"
-          - name: Issues Header
-            run: echo "Title:${{ github.event.issue.title }}"
+          - name: Issues Details
+            run: | 
+             echo "ID: ${{github.event.issue.ID}}"
+             echo "Title: ${{ github.event.issue.title }}"
+             echo "Body: ${{ github.event.issue.body }}"
+             echo "Issue Number: ${{ github.event.issue.number }}"
