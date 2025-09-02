@@ -7,7 +7,7 @@ jobs:
             - name: Github Issues Output
               run: echo "******* Opened ISSUE *******"
             - name: Issues Header
-              run: echo "Title: ${{ github.events.issue.title }}" 
+              run: echo "Title: ${{ github.event.issue }}" 
             
             # - name: Github JSON Content
             #   run: echo "${{ toJson(github) }}"
