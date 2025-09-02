@@ -12,4 +12,4 @@ jobs:
              echo "Title: ${{ github.event.issue.title }}"
              echo "Body: ${{ github.event.issue.body }}"
              echo "Issue Number: ${{ github.event.issue.number }}"
-             echo "Created By: ${{ github.event.issue.user }}"
+             echo "Created By: ${{ github.event.issue.author_association }}"
