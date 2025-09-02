@@ -1,4 +1,4 @@
-name: GA_EX_011
+name: GA_EX_02
 on: issues
 jobs:
     output-issues:
