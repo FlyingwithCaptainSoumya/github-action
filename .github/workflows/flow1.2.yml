@@ -1,4 +1,4 @@
-name: GA_EX_01
+name: GA_EX_01.2
 on: [push, workflow_dispatch]
 jobs:
     lint:
