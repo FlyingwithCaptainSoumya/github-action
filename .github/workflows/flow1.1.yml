@@ -1,0 +1,8 @@
+name: GA_EX_011
+on: workflow_dispatch
+jobs:
+    issues:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Github JSON Content
+              run: echo ${{ toJson(github) }}
