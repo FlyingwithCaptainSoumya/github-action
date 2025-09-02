@@ -1,8 +1,13 @@
 name: GA_EX_011
-on: workflow_dispatch
+on: issues
 jobs:
     issues:
         runs-on: ubuntu-latest
-        steps:
-            - name: Github JSON Content
-              run: echo "${{ toJson(github) }}"
+        steps: 
+            - name: Github Issues Output
+              run: echo "******* Opened ISSUE *******"
+            - name: Issues Header
+              run: echo "Title: ${{ github.events.issue }}" 
+            
+            # - name: Github JSON Content
+            #   run: echo "${{ toJson(github) }}"
